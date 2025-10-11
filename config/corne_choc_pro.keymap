@@ -26,9 +26,9 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&kp TAB                &mt NUMBER_1 SQT    &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L      &kp FSLH
-&mt LEFT_SHIFT ESCAPE  &mt RA(NUMBER_1) A  &mt RA(NUMBER_3) O  &mt RA(NUMBER_4) E   &mt RA(NUMBER_8) U  &mt RA(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &kp T           &kp N           &mt RA(NUMBER_6) S  &kp MINUS
-&kp LCTRL              &kp SEMI            &kp Q               &kp J                &mt RA(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W           &kp V           &mt RA(EQUAL) Z     &kp EQUAL
+&mt GRAVE TAB          &mt NUMBER_1 SQT    &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L      &mt LEFT_BRACKET SLASH
+&mt LEFT_SHIFT ESCAPE  &mt RA(NUMBER_1) A  &mt RA(NUMBER_3) O  &mt RA(NUMBER_4) E   &mt RA(NUMBER_8) U  &mt RA(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &mt RA(T) T     &kp N           &mt RA(NUMBER_6) S  &mt RIGHT_BRACKET MINUS
+&kp LCTRL              &kp SEMI            &kp Q               &kp J                &mt RA(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W           &kp V           &mt RA(EQUAL) Z     &mt BACKSLASH EQUAL
                                                                &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
             >;
         };
