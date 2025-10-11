@@ -21,10 +21,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&kp TAB                &kp SQT   &kp COMMA  &kp PERIOD  &kp P        &kp Y          &trans  &trans  &kp F    &kp G        &kp C     &kp R  &kp L  &kp MINUS
-&mt LEFT_SHIFT ESCAPE  &kp A     &kp O      &kp E       &kp U        &kp I          &trans  &trans  &kp D    &kp H        &kp T     &kp N  &kp S  &kp SLASH
-&kp LEFT_CONTROL       &kp SEMI  &kp Q      &kp J       &kp K        &kp X                          &kp B    &kp M        &kp W     &kp V  &kp Z  &kp END
-                                            &kp LGUI    &lt 1 SPACE  &kp BACKSPACE                  &kp RET  &lt 2 SPACE  &kp RALT
+&kp TAB                &mt NUMBER_1 SQT       &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L      &kp FSLH
+&mt LEFT_SHIFT ESCAPE  &mt RA(EXCLAMATION) A  &mt RA(NUMBER_3) O  &mt RA(NUMBER_4) E   &mt RA(NUMBER_8) U  &mt RA(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &kp T           &kp N           &mt RA(NUMBER_6) S  &kp MINUS
+&kp LCTRL              &kp SEMI               &kp Q               &kp J                &mt RA(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W           &kp V           &mt RA(EQUAL) Z     &kp EQUAL
+                                                                  &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
             >;
         };
 
@@ -38,10 +38,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp RCTRL  &kp N6    &kp N7    &kp N8  &kp N9     &kp N0  &kp BSPC
-&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans  &trans     &trans  &kp PRINTSCREEN
-                                          &trans        &trans        &trans                                &trans    &to 3     &trans
+&kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &trans  &trans  &kp N6  &kp N7          &kp N8          &kp N9        &kp N0           &kp BSPC
+&kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                  &trans  &trans          &trans          &trans        &trans           &kp PRINTSCREEN
+                                          &trans        &trans        &trans                          &trans  &to 3           &trans
             >;
         };
 
@@ -55,10 +55,10 @@
             //                    | GUI |     | SPC |               | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp LCTRL  &kp RCTRL  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &trans    &trans  &trans    &trans    &trans     &kp LALT   &kp RALT   &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans  &trans    &trans    &trans                           &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                             &trans    &trans    &trans                           &trans     &trans     &trans
+&kp TAB    &kp EXCL      &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &trans  &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &kp RA(EXCL)  &trans  &kp E     &kp U       &kp I        &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &trans        &trans  &trans    &trans      &kp Z                        &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                 &trans    &trans      &trans                       &trans     &trans     &trans
             >;
         };
 
@@ -82,6 +82,17 @@
             >;
 
             label = "RGB";
+        };
+
+        FN1-12 {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+
+            label = "FN1-12";
         };
     };
 };
