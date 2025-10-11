@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <250>;
+    flavor = "balanced";
+    tapping-term-ms = <210>;
 };
 
 / {
@@ -20,65 +20,7 @@
 };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-
-        combo_a {
-            bindings = <&kp RG(LS(NUMBER_1))>;
-            key-positions = <14 15>;
-            layers = <0>;
-            timeout-ms = <210>;
-        };
-
-        combo_e_nos {
-            bindings = <&kp RG(LS(NUMBER_3))>;
-            key-positions = <14 16>;
-            timeout-ms = <210>;
-            layers = <0>;
-        };
-
-        comb_e_dot {
-            bindings = <&kp RG(LS(NUMBER_4))>;
-            key-positions = <14 17>;
-            layers = <0>;
-            timeout-ms = <210>;
-        };
-
-        combo_u_nos {
-            bindings = <&kp LS(RG(N8))>;
-            key-positions = <14 18>;
-            timeout-ms = <210>;
-            layers = <0>;
-        };
-
-        comb_i_nos {
-            bindings = <&kp LS(RG(N5))>;
-            key-positions = <14 19>;
-            timeout-ms = <210>;
-            layers = <0>;
-        };
-
-        combo_c {
-            bindings = <&kp LS(RG(NUMBER_2))>;
-            key-positions = <14 24>;
-            timeout-ms = <210>;
-            layers = <0>;
-        };
-
-        combo_s {
-            bindings = <&kp LS(RG(NUMBER_6))>;
-            key-positions = <14 26>;
-            timeout-ms = <210>;
-            layers = <0>;
-        };
-
-        combo_z {
-            bindings = <&kp LS(RG(EQUAL))>;
-            key-positions = <14 38>;
-            timeout-ms = <210>;
-            layers = <0>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -86,10 +28,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&mt GRAVE TAB          &mt NUMBER_1 SQT    &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L      &mt NON_US_BACKSLASH EQUAL
-&mt LEFT_SHIFT ESCAPE  &mt RG(NUMBER_1) A  &mt RG(NUMBER_3) O  &mt RG(NUMBER_4) E   &mt RG(NUMBER_8) U  &mt RG(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &mt RG(NUMBER_2) T  &kp N           &mt RG(NUMBER_6) S  &mt LEFT_BRACKET SLASH
-&kp LCTRL              &kp SEMI            &kp Q               &kp J                &mt RG(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W               &kp V           &mt RG(EQUAL) Z     &mt RIGHT_BRACKET MINUS
-                                                               &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
+&mt GRAVE TAB   &mt NUMBER_1 SQT    &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L      &mt NON_US_BACKSLASH EQUAL
+&mt LSHIFT ESC  &mt RG(NUMBER_1) A  &mt RG(NUMBER_3) O  &mt RG(NUMBER_4) E   &mt RG(NUMBER_8) U  &mt RG(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &mt RG(NUMBER_2) T  &kp N           &mt RG(NUMBER_6) S  &mt LEFT_BRACKET SLASH
+&kp LCTRL       &kp SEMI            &kp Q               &kp J                &mt RG(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W               &kp V           &mt RG(EQUAL) Z     &mt RIGHT_BRACKET MINUS
+                                                        &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
             >;
         };
 
