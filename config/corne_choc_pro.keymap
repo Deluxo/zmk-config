@@ -11,8 +11,8 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <180>;
+    flavor = "tap-unless-interrupted";
+    require-prior-idle-ms = <50>;
 };
 
 / {
