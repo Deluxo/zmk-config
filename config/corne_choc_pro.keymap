@@ -20,6 +20,50 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_a {
+            bindings = <&kp RG(LS(NUMBER_1))>;
+            key-positions = <14 15>;
+        };
+
+        combo_e_nos {
+            bindings = <&kp RG(LS(NUMBER_3))>;
+            key-positions = <14 16>;
+        };
+
+        comb_e_dot {
+            bindings = <&kp RG(LS(NUMBER_4))>;
+            key-positions = <14 17>;
+        };
+
+        combo_u_nos {
+            bindings = <&kp LS(RG(N8))>;
+            key-positions = <14 18>;
+        };
+
+        comb_i_nos {
+            bindings = <&kp LS(RG(N5))>;
+            key-positions = <14 19>;
+        };
+
+        combo_c {
+            bindings = <&kp LS(RG(NUMBER_2))>;
+            key-positions = <14 24>;
+        };
+
+        combo_s {
+            bindings = <&kp LS(RG(NUMBER_6))>;
+            key-positions = <14 26>;
+        };
+
+        combo_z {
+            bindings = <&kp LS(RG(EQUAL))>;
+            key-positions = <14 38>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
