@@ -153,180 +153,91 @@
     };
 
     behaviors {
-        hold_lt_up_a: hold_lt_up_a {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_A";
-            bindings = <&m_lt_up_a>, <&kp>;
+        lt_a: lt_a {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_A";
+            bindings = <&m_lt_low_a>, <&m_lt_up_a>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_low_a: hold_lt_low_a {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_A";
-            bindings = <&m_lt_low_a>, <&kp>;
+        lt_c: lt_c {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_C";
+            bindings = <&m_lt_low_c>, <&m_lt_up_c>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_up_c: hold_lt_up_c {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_C";
-            bindings = <&m_lt_up_c>, <&kp>;
+        lt_e_nos: lt_e_nos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_E_NOS";
+            bindings = <&m_lt_low_e_nos>, <&m_lt_up_e_nos>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_low_c: hold_lt_low_c {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_C";
-            bindings = <&m_lt_low_c>, <&kp>;
+        lt_e_dot: lt_e_dot {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_E_DOT";
+            bindings = <&m_lt_low_e_dot>, <&m_lt_up_e_dot>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_up_e_nos: hold_lt_up_e_nos {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_E_NOS";
-            bindings = <&m_lt_up_e_nos>, <&kp>;
+        lt_i: lt_i {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_I";
+            bindings = <&m_lt_low_i>, <&m_lt_up_i>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_low_e_nos: hold_lt_low_e_nos {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_E_NOS";
-            bindings = <&m_lt_low_e_nos>, <&kp>;
+        lt_s: lt_s {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_S";
+            bindings = <&m_lt_low_s>, <&m_lt_up_s>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_up_e_dot: hold_lt_up_e_dot {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_E_DOT";
-            bindings = <&m_lt_up_e_dot>, <&kp>;
+        lt_u_nos: lt_u_nos {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_U_NOS";
+            bindings = <&m_lt_low_u_nos>, <&m_lt_up_u_nos>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_low_e_dot: hold_lt_low_e_dot {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_E_DOT";
-            bindings = <&m_lt_low_e_dot>, <&kp>;
+        lt_u_ilg: lt_u_ilg {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_U_ILG";
+            bindings = <&m_lt_low_u_ilg>, <&m_lt_up_u_ilg>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_up_i: hold_lt_up_i {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_I";
-            bindings = <&m_lt_up_i>, <&kp>;
+        lt_z: lt_z {
+            compatible = "zmk,behavior-mod-morph";
+            label = "LT_Z";
+            bindings = <&m_lt_low_z>, <&m_lt_up_z>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
         };
 
-        hold_lt_low_i: hold_lt_low_i {
+        hold_lt_a: hold_lt_a {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_I";
-            bindings = <&m_lt_low_i>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_up_s: hold_lt_up_s {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_S";
-            bindings = <&m_lt_up_s>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_low_s: hold_lt_low_s {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_S";
-            bindings = <&m_lt_low_s>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_up_u_nos: hold_lt_up_u_nos {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_U_NOS";
-            bindings = <&m_lt_up_u_nos>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_low_u_nos: hold_lt_low_u_nos {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_U_NOS";
-            bindings = <&m_lt_low_u_nos>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_up_u_ilg: hold_lt_up_u_ilg {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_U_ILG";
-            bindings = <&m_lt_up_u_ilg>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_low_u_ilg: hold_lt_low_u_ilg {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_U_ILG";
-            bindings = <&m_lt_low_u_ilg>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_up_z: hold_lt_up_z {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_UP_Z";
-            bindings = <&m_lt_up_z>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
-        hold_lt_low_z: hold_lt_low_z {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_LT_LOW_Z";
-            bindings = <&m_lt_low_z>, <&kp>;
+            label = "HOLD_LT_A";
+            bindings = <&lt_a>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
@@ -340,10 +251,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&mt GRAVE TAB   &mt NUMBER_1 SQT   &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L      &mt NON_US_BACKSLASH EQUAL
-&mt LSHIFT ESC  &hold_lt_up_a 0 A  &mt RG(NUMBER_3) O  &mt RG(NUMBER_4) E   &mt RG(NUMBER_8) U  &mt RG(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &mt RG(NUMBER_2) T  &kp N           &mt RG(NUMBER_6) S  &mt LEFT_BRACKET SLASH
-&kp LCTRL       &kp SEMI           &kp Q               &kp J                &mt RG(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W               &kp V           &mt RG(EQUAL) Z     &mt RIGHT_BRACKET MINUS
-                                                       &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
+&mt GRAVE TAB   &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L      &mt NON_US_BACKSLASH EQUAL
+&mt LSHIFT ESC  &hold_lt_a 0 A    &mt RG(NUMBER_3) O  &mt RG(NUMBER_4) E   &mt RG(NUMBER_8) U  &mt RG(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &mt RG(NUMBER_2) T  &kp N           &mt RG(NUMBER_6) S  &mt LEFT_BRACKET SLASH
+&kp LCTRL       &kp SEMI          &kp Q               &kp J                &mt RG(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W               &kp V           &mt RG(EQUAL) Z     &mt RIGHT_BRACKET MINUS
+                                                      &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
             >;
         };
 
