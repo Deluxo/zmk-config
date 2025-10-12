@@ -243,6 +243,86 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        hold_lt_c: hold_lt_c {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_C";
+            bindings = <&lt_c>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_e_nos: hold_lt_e_nos {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_E_NOS";
+            bindings = <&lt_e_nos>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_e_dot: hold_lt_e_dot {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_E_DOT";
+            bindings = <&lt_e_dot>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_i: hold_lt_i {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_I";
+            bindings = <&lt_i>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_s: hold_lt_s {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_S";
+            bindings = <&lt_s>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_u_nos: hold_lt_u_nos {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_U_NOS";
+            bindings = <&lt_u_nos>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_u_ilg: hold_lt_u_ilg {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_U_ILG";
+            bindings = <&lt_u_ilg>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
+
+        hold_lt_z: hold_lt_z {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_Z";
+            bindings = <&lt_z>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -251,10 +331,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&mt GRAVE TAB   &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y      &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L      &mt NON_US_BACKSLASH EQUAL
-&mt LSHIFT ESC  &hold_lt_a 0 A    &mt RG(NUMBER_3) O  &mt RG(NUMBER_4) E   &mt RG(NUMBER_8) U  &mt RG(NUMBER_5) I  &trans  &trans  &kp D           &kp H        &mt RG(NUMBER_2) T  &kp N           &mt RG(NUMBER_6) S  &mt LEFT_BRACKET SLASH
-&kp LCTRL       &kp SEMI          &kp Q               &kp J                &mt RG(NUMBER_7) K  &kp X                               &kp B           &kp M        &kp W               &kp V           &mt RG(EQUAL) Z     &mt RIGHT_BRACKET MINUS
-                                                      &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                       &kp RET         &lt 2 SPACE  &kp RALT
+&mt GRAVE TAB   &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y  &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L  &mt NON_US_BACKSLASH EQUAL
+&mt LSHIFT ESC  &hold_lt_a 0 A    &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E   &hold_lt_u_ilg 0 U  &hold_lt_i 0 I  &trans  &trans  &kp D           &kp H        &lt_c           &kp N           &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
+&kp LCTRL       &kp SEMI          &kp Q               &kp J                &hold_lt_u_nos 0 K  &kp X                           &kp B           &kp M        &kp W           &kp V           &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
+                                                      &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                   &kp RET         &lt 2 SPACE  &kp RALT
             >;
         };
 
