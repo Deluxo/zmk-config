@@ -24,14 +24,23 @@
     combos { compatible = "zmk,combos"; };
 
     macros {
-        lt_up_a: lt_up_a {
+        m_lt_up_a: m_lt_up_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kp LC(LS(U)) &kp N0 &kp N1 &kp N0 &kp N4 &kp RET>,
-                <&macro_press>;
+            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N0 &kp N4 &kp RET>;
+            label = "M_LT_UP_A";
+        };
+    };
 
-            label = "LT_UP_A";
+    behaviors {
+        hold_lt_up_a: hold_lt_up_a {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_LT_UP_A";
+            bindings = <&m_lt_up_a>, <&mt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
         };
     };
 
