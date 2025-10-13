@@ -242,7 +242,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_c: hold_lt_c {
@@ -253,7 +253,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_e_nos: hold_lt_e_nos {
@@ -264,7 +264,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_e_dot: hold_lt_e_dot {
@@ -275,7 +275,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_i: hold_lt_i {
@@ -286,7 +286,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_s: hold_lt_s {
@@ -297,7 +297,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_u_nos: hold_lt_u_nos {
@@ -308,7 +308,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_u_ilg: hold_lt_u_ilg {
@@ -319,7 +319,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
 
         hold_lt_z: hold_lt_z {
@@ -330,7 +330,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-            require-prior-idle-ms = <200>;
+            require-prior-idle-ms = <100>;
         };
     };
 
