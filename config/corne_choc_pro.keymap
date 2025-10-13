@@ -28,126 +28,126 @@
         m_lt_up_a: m_lt_up_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N0 &kp N4 &kp RET>;
+            bindings = <&kp RALT &kp LS(A) &kp COMMA>;
             label = "M_LT_UP_A";
         };
 
         m_lt_low_a: m_lt_low_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N0 &kp N5 &kp RET>;
+            bindings = <&kp RALT &kp A &kp COMMA>;
             label = "M_LT_LOW_A";
         };
 
         m_lt_up_c: m_lt_up_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N0 &kp C &kp RET>;
+            bindings = <&kp RALT &kp C &kp LS(C)>;
             label = "M_LT_UP_C";
         };
 
         m_lt_low_c: m_lt_low_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N0 &kp D &kp RET>;
+            bindings = <&kp RALT &kp C &kp C>;
             label = "M_LT_LOW_C";
         };
 
         m_lt_up_e_nos: m_lt_up_e_nos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N1 &kp N8 &kp RET>;
+            bindings = <&kp RALT &kp LS(E) &kp COMMA>;
             label = "M_LT_UP_E_NOS";
         };
 
         m_lt_low_e_nos: m_lt_low_e_nos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N1 &kp N9 &kp RET>;
+            bindings = <&kp RALT &kp E &kp COMMA>;
             label = "M_LT_LOW_E_NOS";
         };
 
         m_lt_up_e_dot: m_lt_up_e_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N1 &kp N6 &kp RET>;
+            bindings = <&kp RALT &kp LS(E) &kp DOT>;
             label = "M_LT_UP_E_DOT";
         };
 
         m_lt_low_e_dot: m_lt_low_e_dot {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N1 &kp N7 &kp RET>;
+            bindings = <&kp RALT &kp E &kp DOT>;
             label = "M_LT_LOW_E_DOT";
         };
 
         m_lt_up_i: m_lt_up_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N2 &kp E &kp RET>;
+            bindings = <&kp RALT &kp LS(I) &kp COMMA>;
             label = "M_LT_UP_I";
         };
 
         m_lt_low_i: m_lt_low_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N2 &kp F &kp RET>;
+            bindings = <&kp RALT &kp I &kp COMMA>;
             label = "M_LT_LOW_I";
         };
 
         m_lt_up_s: m_lt_up_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N6 &kp N0 &kp RET>;
+            bindings = <&kp RALT &kp LS(S) &kp LT>;
             label = "M_LT_UP_S";
         };
 
         m_lt_low_s: m_lt_low_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N6 &kp N1 &kp RET>;
+            bindings = <&kp RALT &kp S &kp LT>;
             label = "M_LT_LOW_S";
         };
 
         m_lt_up_u_nos: m_lt_up_u_nos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N7 &kp N2 &kp RET>;
+            bindings = <&kp RALT &kp LS(U) &kp COMMA>;
             label = "M_LT_UP_U_NOS";
         };
 
         m_lt_low_u_nos: m_lt_low_u_nos {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N7 &kp N3 &kp RET>;
+            bindings = <&kp LS(RALT) &kp U &kp COMMA>;
             label = "M_LT_LOW_U_NOS";
         };
 
         m_lt_up_u_ilg: m_lt_up_u_ilg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N6 &kp A &kp RET>;
+            bindings = <&kp RALT &kp LS(U) &kp MINUS>;
             label = "M_LT_UP_U_ILG";
         };
 
         m_lt_low_u_ilg: m_lt_low_u_ilg {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N6 &kp LS(B) &kp RET>;
+            bindings = <&kp RALT &kp U &kp MINUS>;
             label = "M_LT_LOW_U_ILG";
         };
 
         m_lt_up_z: m_lt_up_z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N7 &kp D &kp RET>;
+            bindings = <&kp RALT &kp LS(Z) &kp LT>;
             label = "M_LT_UP_Z";
         };
 
         m_lt_low_z: m_lt_low_z {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(LS(U)) &kp N0 &kp N1 &kp N7 &kp E &kp RET>;
+            bindings = <&kp RALT &kp Z &kp LT>;
             label = "M_LT_LOW_Z";
         };
     };
