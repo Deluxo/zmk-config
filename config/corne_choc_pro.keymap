@@ -12,9 +12,9 @@
 #include <dt-bindings/zmk/rgb.h>
 
 &mt {
-    flavor = "tap-preferred";
-    quick-tap-ms = <90>;
-    tapping-term-ms = <220>;
+    flavor = "balanced";
+    quick-tap-ms = <100>;
+    tapping-term-ms = <200>;
 };
 
 / {
@@ -240,9 +240,9 @@
             bindings = <&lt_a>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_c: hold_lt_c {
@@ -251,9 +251,9 @@
             bindings = <&lt_c>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_e_nos: hold_lt_e_nos {
@@ -262,9 +262,9 @@
             bindings = <&lt_e_nos>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_e_dot: hold_lt_e_dot {
@@ -273,9 +273,9 @@
             bindings = <&lt_e_dot>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_i: hold_lt_i {
@@ -284,9 +284,9 @@
             bindings = <&lt_i>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_s: hold_lt_s {
@@ -295,9 +295,9 @@
             bindings = <&lt_s>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_u_nos: hold_lt_u_nos {
@@ -306,9 +306,9 @@
             bindings = <&lt_u_nos>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_u_ilg: hold_lt_u_ilg {
@@ -317,9 +317,9 @@
             bindings = <&lt_u_ilg>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
 
         hold_lt_z: hold_lt_z {
@@ -328,9 +328,9 @@
             bindings = <&lt_z>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-            require-prior-idle-ms = <100>;
+            tapping-term-ms = <200>;
+            flavor = "balanced";
+            quick-tap-ms = <100>;
         };
     };
 
@@ -340,7 +340,7 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&mt GRAVE TAB   &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y  &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L  &mt BACKSLASH EQUAL
+&mt TAB GRAVE   &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y  &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L  &mt BACKSLASH EQUAL
 &mt LSHIFT ESC  &hold_lt_a 0 A    &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E   &hold_lt_u_ilg 0 U  &hold_lt_i 0 I  &trans  &trans  &kp D           &kp H        &hold_lt_c 0 T  &kp N           &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
 &kp LCTRL       &kp SEMI          &kp Q               &kp J                &hold_lt_u_nos 0 K  &kp X                           &kp B           &kp M        &kp W           &kp V           &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
                                                       &kp LGUI             &lt 1 SPACE         &kp BACKSPACE                   &kp RET         &lt 2 SPACE  &kp RALT
