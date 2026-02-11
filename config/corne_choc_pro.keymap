@@ -373,20 +373,11 @@
             tapping-term-ms = <222>;
         };
 
-        new_behavior: new_behavior {
+        td_ralt_layer_top: td_ralt_layer_top {
             compatible = "zmk,behavior-tap-dance";
-            label = "NEW_BEHAVIOR";
+            label = "TD_RALT_LAYER_TOP";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp ESC>;
-
-            tapping-term-ms = <222>;
-        };
-
-        tp_super_layer_top: tp_super_layer_top {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TP_SUPER_LAYER_TOP";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN>, <&mo 5>;
+            bindings = <&kp RALT>, <&mo 5>;
         };
     };
 
@@ -396,10 +387,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&td_tab_tick_grave  &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y  &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C  &mt NUMBER_9 R  &mt NUMBER_0 L  &mt BACKSLASH EQUAL
-&td_shift_esc       &hold_lt_a 0 A    &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E   &hold_lt_u_ilg 0 U  &hold_lt_i 0 I  &trans  &trans  &kp D           &kp H        &hold_lt_c 0 T  &kp N           &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
-&kp LCTRL           &kp SEMI          &kp Q               &kp J                &hold_lt_u_nos 0 K  &kp X                           &kp B           &kp M        &kp W           &kp V           &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
-                                                          &tp_super_layer_top  &lt 1 SPACE         &kp BACKSPACE                   &kp RET         &lt 2 SPACE  &kp RALT
+&td_tab_tick_grave  &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y  &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L  &mt BACKSLASH EQUAL
+&td_shift_esc       &hold_lt_a 0 A    &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E   &hold_lt_u_ilg 0 U  &hold_lt_i 0 I  &trans  &trans  &kp D           &kp H        &hold_lt_c 0 T      &kp N           &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
+&kp LCTRL           &kp SEMI          &kp Q               &kp J                &hold_lt_u_nos 0 K  &kp X                           &kp B           &kp M        &kp W               &kp V           &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
+                                                          &kp LEFT_WIN         &lt 1 SPACE         &kp BACKSPACE                   &kp RET         &lt 2 SPACE  &td_ralt_layer_top
             >;
         };
 
