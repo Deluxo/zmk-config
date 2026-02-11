@@ -361,7 +361,7 @@
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp GRAVE>;
 
-            tapping-term-ms = <120>;
+            tapping-term-ms = <222>;
         };
 
         td_shift_esc: td_shift_esc {
@@ -371,6 +371,15 @@
             bindings = <&kp LEFT_SHIFT>, <&kp ESC>;
 
             tapping-term-ms = <120>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_SHIFT>, <&kp ESC>;
+
+            tapping-term-ms = <222>;
         };
     };
 
