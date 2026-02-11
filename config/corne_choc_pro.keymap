@@ -151,6 +151,76 @@
             bindings = <&kp RALT &kp Z &kp LT>;
             label = "M_LT_LOW_Z";
         };
+
+        m_num_1: m_num_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_1 &sl 6>;
+            label = "M_NUM_1";
+        };
+
+        m_num_2: m_num_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_2 &sl 6>;
+            label = "M_NUM_2";
+        };
+
+        m_num_3: m_num_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_3 &sl 6>;
+            label = "M_NUM_3";
+        };
+
+        m_num_4: m_num_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_4 &sl 6>;
+            label = "M_NUM_4";
+        };
+
+        m_num_5: m_num_5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &sl 6>;
+            label = "M_NUM_5";
+        };
+
+        m_num_6: m_num_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp NUMBER_6 &sl 6>;
+            label = "M_NUM_6";
+        };
+
+        m_num_7: m_num_7 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N7 &sl 6>;
+            label = "M_NUM_7";
+        };
+
+        m_num_8: m_num_8 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N8 &sl 6>;
+            label = "M_NUM_8";
+        };
+
+        m_num_9: m_num_9 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N9 &sl 6>;
+            label = "M_NUM_9";
+        };
+
+        m_num_0: m_num_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N0 &sl 6>;
+            label = "M_NUM_0";
+        };
     };
 
     behaviors {
@@ -379,6 +449,96 @@
             #binding-cells = <0>;
             bindings = <&kp RALT>, <&mo 5>;
         };
+
+        mt_num_1: mt_num_1 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_1";
+            bindings = <&m_num_1>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_2: mt_num_2 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_2";
+            bindings = <&m_num_2>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_3: mt_num_3 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_3";
+            bindings = <&m_num_3>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_4: mt_num_4 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_4";
+            bindings = <&m_num_4>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_mt_num_5: mt_num_mt_num_5 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_MT_NUM_5";
+            bindings = <&m_num_5>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_6: mt_num_6 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_6";
+            bindings = <&m_num_6>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_7: mt_num_7 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_7";
+            bindings = <&m_num_7>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_8: mt_num_8 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_8";
+            bindings = <&m_num_8>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_9: mt_num_9 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_9";
+            bindings = <&m_num_9>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
+
+        mt_num_0: mt_num_0 {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_NUM_0";
+            bindings = <&m_num_0>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <222>;
+        };
     };
 
     keymap {
@@ -387,10 +547,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&td_tab_tick_grave  &mt NUMBER_1 SQT  &mt NUMBER_2 COMMA  &mt NUMBER_3 PERIOD  &mt NUMBER_4 P      &mt NUMBER_5 Y  &trans  &trans  &mt NUMBER_6 F  &mt N7 G     &mt NUMBER_8 C      &mt NUMBER_9 R  &mt NUMBER_0 L  &mt BACKSLASH EQUAL
-&td_shift_esc       &hold_lt_a 0 A    &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E   &hold_lt_u_ilg 0 U  &hold_lt_i 0 I  &trans  &trans  &kp D           &kp H        &hold_lt_c 0 T      &kp N           &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
-&kp LCTRL           &kp SEMI          &kp Q               &kp J                &hold_lt_u_nos 0 K  &kp X                           &kp B           &kp M        &kp W               &kp V           &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
-                                                          &kp LEFT_WIN         &lt 1 SPACE         &kp BACKSPACE                   &kp RET         &lt 2 SPACE  &td_ralt_layer_top
+&td_tab_tick_grave  &mt_num_1 0 SQT  &mt_num_2 0 COMMA   &mt_num_3 0 PERIOD  &mt_num_4 0 P       &mt_num_mt_num_5 0 Y  &trans  &trans  &mt_num_6 0 F  &mt_num_7 0 G  &mt_num_8 0 C       &mt_num_9 0 R  &mt_num_0 0 L   &mt BACKSLASH EQUAL
+&td_shift_esc       &hold_lt_a 0 A   &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E  &hold_lt_u_ilg 0 U  &hold_lt_i 0 I        &trans  &trans  &kp D          &kp H          &hold_lt_c 0 T      &kp N          &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
+&kp LCTRL           &kp SEMI         &kp Q               &kp J               &hold_lt_u_nos 0 K  &kp X                                 &kp B          &kp M          &kp W               &kp V          &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
+                                                         &kp LEFT_WIN        &lt 1 SPACE         &kp BACKSPACE                         &kp RET        &lt 2 SPACE    &td_ralt_layer_top
             >;
         };
 
@@ -453,6 +613,15 @@
             >;
 
             label = "top";
+        };
+
+        num {
+            bindings = <
+&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp EQUAL
+&trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp FSLH
+&trans     &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &kp MINUS
+                           &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
         };
     };
 };
