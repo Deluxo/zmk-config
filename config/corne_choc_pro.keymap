@@ -457,6 +457,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            flavor = "tap-preferred";
+            require-prior-idle-ms = <150>;
+            quick-tap-ms = <200>;
         };
 
         mt_num_2: mt_num_2 {
@@ -466,6 +469,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_3: mt_num_3 {
@@ -475,6 +481,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_4: mt_num_4 {
@@ -484,15 +493,21 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
-        mt_num_mt_num_5: mt_num_mt_num_5 {
+        mt_num_5: mt_num_5 {
             compatible = "zmk,behavior-hold-tap";
-            label = "MT_NUM_MT_NUM_5";
+            label = "MT_NUM_5";
             bindings = <&m_num_5>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_6: mt_num_6 {
@@ -502,6 +517,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_7: mt_num_7 {
@@ -511,6 +529,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_8: mt_num_8 {
@@ -520,6 +541,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_9: mt_num_9 {
@@ -529,6 +553,9 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <222>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <150>;
+            flavor = "tap-preferred";
         };
 
         mt_num_0: mt_num_0 {
@@ -547,10 +574,10 @@
         default_layer {
             display-name = "Dvorak";
             bindings = <
-&td_tab_tick_grave  &mt_num_1 0 SQT  &mt_num_2 0 COMMA   &mt_num_3 0 PERIOD  &mt_num_4 0 P       &mt_num_mt_num_5 0 Y  &trans  &trans  &mt_num_6 0 F  &mt_num_7 0 G  &mt_num_8 0 C       &mt_num_9 0 R  &mt_num_0 0 L   &mt BACKSLASH EQUAL
-&td_shift_esc       &hold_lt_a 0 A   &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E  &hold_lt_u_ilg 0 U  &hold_lt_i 0 I        &trans  &trans  &kp D          &kp H          &hold_lt_c 0 T      &kp N          &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
-&kp LCTRL           &kp SEMI         &kp Q               &kp J               &hold_lt_u_nos 0 K  &kp X                                 &kp B          &kp M          &kp W               &kp V          &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
-                                                         &kp LEFT_WIN        &lt 1 SPACE         &kp BACKSPACE                         &kp RET        &lt 2 SPACE    &td_ralt_layer_top
+&td_tab_tick_grave  &mt_num_1 0 SQT  &mt_num_2 0 COMMA   &mt_num_3 0 PERIOD  &mt_num_4 0 P       &mt_num_5 0 Y   &trans  &trans  &mt_num_6 0 F  &mt_num_7 0 G  &mt_num_8 0 C       &mt_num_9 0 R  &mt_num_0 0 L   &mt BACKSLASH EQUAL
+&td_shift_esc       &hold_lt_a 0 A   &hold_lt_e_nos 0 O  &hold_lt_e_dot 0 E  &hold_lt_u_ilg 0 U  &hold_lt_i 0 I  &trans  &trans  &kp D          &kp H          &hold_lt_c 0 T      &kp N          &hold_lt_s 0 S  &mt LEFT_BRACKET SLASH
+&kp LCTRL           &kp SEMI         &kp Q               &kp J               &hold_lt_u_nos 0 K  &kp X                           &kp B          &kp M          &kp W               &kp V          &hold_lt_z 0 Z  &mt RIGHT_BRACKET MINUS
+                                                         &kp LEFT_WIN        &lt 1 SPACE         &kp BACKSPACE                   &kp RET        &lt 2 SPACE    &td_ralt_layer_top
             >;
         };
 
@@ -617,10 +644,10 @@
 
         num {
             bindings = <
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &trans  &trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp EQUAL
-&trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp FSLH
-&trans     &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &kp MINUS
-                           &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &m_num_1  &m_num_2  &m_num_3  &m_num_4  &m_num_5  &trans  &trans  &m_num_6  &m_num_7  &m_num_8  &m_num_9  &m_num_0  &trans
+&trans  &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
+&trans  &trans    &trans    &trans    &trans    &trans                    &trans    &trans    &trans    &trans    &trans    &trans
+                            &trans    &trans    &trans                    &trans    &trans    &trans
             >;
         };
     };
