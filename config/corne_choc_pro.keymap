@@ -655,7 +655,7 @@
         num {
             bindings = <
 &trans  &m_num_1  &m_num_2  &m_num_3  &m_num_4  &m_num_5  &trans  &trans  &m_num_6  &m_num_7  &m_num_8  &m_num_9  &m_num_0  &trans
-&trans  &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
+&to 0   &trans    &trans    &trans    &trans    &trans    &trans  &trans  &trans    &trans    &trans    &trans    &trans    &trans
 &trans  &trans    &trans    &trans    &trans    &trans                    &trans    &trans    &trans    &trans    &trans    &trans
                             &trans    &trans    &trans                    &trans    &trans    &trans
             >;
