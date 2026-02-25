@@ -445,7 +445,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHIFT_ESC";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT>, <&kp ESC>;
+            bindings = <&mt LEFT_SHIFT ESCAPE>, <&kp ESC>;
 
             tapping-term-ms = <222>;
         };
